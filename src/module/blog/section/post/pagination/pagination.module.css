@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.page_btn {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.page_btn:hover {
+  color: #88B702;
+}
+
+.page_btn.active {
+  background: #c6ff00;
+  color: #000;
+  border-color: #c6ff00;
+}
+
+.arrow_btn {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1.8rem;
+}
+
+.arrow_btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.arrow_btn:hover:not(:disabled) {
+  background-color: #88B702;
+}

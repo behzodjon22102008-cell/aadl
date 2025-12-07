@@ -1,0 +1,14 @@
+.btn_articles {
+    width: 243px;
+    height: 70px;
+    border-radius: 80px;
+    background-color: #FFFFFF1A;
+    color: white;
+    gap: 4px;
+    font-family: "DM Sans";
+    font-size: 17px;
+    font-weight: 700;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}

@@ -1,0 +1,137 @@
+.advantages_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  padding: 12rem 0;
+  background-color: black;
+}
+
+.phones_block {
+  position: relative;
+  width: 42rem;
+  height: 42rem;
+}
+
+.green_glow {
+  position: absolute;
+  width: 75rem;
+  height:  75rem;
+  background: radial-gradient(circle, #597b03 0%, #0f0f0f 60%);
+  border-radius: 50%;
+  filter: blur(4rem);
+  top: -10rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+.phone {
+  position: absolute;
+  width: 40rem;
+  z-index: 2; 
+  margin-left: 16rem;
+  margin-top: 4rem;
+}
+
+
+
+.text_block {
+  max-width: 46rem;
+  margin-right: 20rem;
+}
+
+.text_block h2 {
+  font-family: "DM Sans";
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.description {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "DM Sans";
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.advantages_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.advantages_list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.advantages_list li img {
+  width: 4.5rem;
+  margin-right: 1.2rem;
+}
+
+@media (max-width: 800px) {
+
+  .advantages_section {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 6rem 0;
+    position: relative;
+  }
+
+  .phones_block {
+    width: 100%;
+    height: 35rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -50px;
+  }
+
+  .green_glow {
+    width: 30rem;
+    height: 70rem;
+    margin-top: 6rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    filter: blur(55px);
+    z-index: 0;
+  }
+
+  .phone {
+    width: 26rem;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+  }
+
+  .text_block {
+    margin: 0;
+    max-width: 33rem;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .text_block h2 {
+    font-size: 2.8rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .advantages_list li {
+    text-align: left;
+  }
+}

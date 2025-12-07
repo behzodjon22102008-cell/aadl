@@ -1,0 +1,62 @@
+.hero {
+  min-height: 90vh;
+  background: radial-gradient(
+    #065c0f 0%,
+    rgba(0, 0, 0, 1) 65%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  color: white;
+  font-family: "DM Sans";
+  text-align: center;
+  margin: 0 auto;
+  padding: 30rem;
+}
+
+.hero h1 {
+  margin-bottom: 2.1rem;
+  font-size: 5.6rem;
+  font-weight: 700;
+  /* width: 930px; */
+  padding: 0 5rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;     
+  opacity: 0.9;
+  /* width: 568px; */
+  padding: 0 19rem;
+}
+
+@media (min-width: 390px) and (max-width: 1200px) {
+  .hero {
+    background: black;
+    padding: 0 1px;
+    gap: 2rem;  
+    min-height: auto;   
+    padding-top: 9rem;  
+  }
+
+  .hero h1 {
+    font-size: 3.4rem;
+    line-height: 4.6rem;
+    /* max-width: 358px; */
+    padding: 0 1rem;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 2rem;  
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: left;
+    margin-bottom: 1.6rem;
+    padding: 0 4rem; 
+  }
+}

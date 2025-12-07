@@ -1,0 +1,171 @@
+.footer {
+    background: rgb(27, 26, 26);
+    padding: 60px 0;
+    color: white;
+    font-family: "DM Sans";
+}
+
+.footer_container {
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo_block {
+    display: flex;
+    align-items: end;
+    gap: 896px;
+    margin-bottom: 49px;
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.socials img {
+    width: 36px;
+    height: 36px;
+}
+
+.footer_menu h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 240px;
+    height: 1px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.menu_grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-row-gap: 12px;
+}
+
+.menu_grid a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer_card {
+    background: #FFFFFF1A;
+    padding: 40px 40px;
+    width: 450px;
+    border-radius: 40px;
+    margin-left: 60%;
+    margin-top: -10%;
+}
+
+.footer_card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.desktop_p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.mobile_p {
+    display: none;
+}
+
+
+
+.rights {
+    font-size: 13px;
+    color: #cfcfcf;
+    margin-top: 30px;
+}
+
+.lines {
+    width: 840px;
+    height: 1px;
+    background: #FFFFFF4D;
+    margin-top: 140px;
+}
+
+@media (min-width: 390px) and (max-width: 1200px) {
+
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 99px;
+    }
+
+    .logo_block {
+        align-items: center;
+        width: 130px;
+    }
+
+    .socials {
+        justify-content: flex-start;
+        margin-left: -1030px;
+        margin-bottom: -170px;
+    }
+
+    .menu_grid {
+        grid-template-columns: repeat(2, 120px);
+        gap: 16px;
+    }
+
+    .footer_menu  {
+        text-align: left;
+    }
+
+    .footer_card {
+        width: 342px;
+        height: 343px;
+        margin: auto;
+    }
+
+    .footer_card h4 {
+        text-align: left;
+    }
+
+    .desktop_p {
+        display: none;
+    }
+
+    .mobile_p {
+        display: block;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        text-align: left;
+        opacity: 0.8;
+    }
+
+    .line {
+        width: 300px;
+        margin-right: 20px;
+        color: #FFFFFF4D;
+    }
+
+    .lines {
+        width: 95%;
+    }
+
+    .rights {
+        margin-top: -60px;
+        margin-bottom: 1px;
+    }
+}

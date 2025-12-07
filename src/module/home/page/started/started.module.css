@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    background-color:  black;
+    height: 90vh;  
+    align-items: center;
+    gap: 6.1rem;
+}
+
+.text {
+  max-width: 42rem;
+  margin-left: 18rem;
+}
+
+.text h2 {
+  font-family: "DM Sans";
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.description {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "DM Sans";
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.list li img {
+  width: 4.5rem;
+  margin-right: 1.2rem;
+}
+
+.vidio_container  {
+    width: 56rem;
+    height: 35rem;
+    border-radius: 4rem;
+    background-color: #FFFFFF1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play_button {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #FFFFFF33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play_icon {
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 6rem 2rem;
+        gap: 4rem;
+    }
+
+    .text {
+      width: 33rem;
+      margin: 0;
+    }
+
+    .text h2 {
+      font-size: 2.8rem;
+      padding: 0 1rem;
+    }
+
+    .description {
+      font-size: 1.6rem;
+      padding: 0 1rem;
+    }
+
+    .list {
+      padding: 0 1rem;
+    }
+
+    .vidio_container {
+      width: 35rem;
+      height: 50rem;
+      border-radius: 4rem;
+    }
+
+    .vidio {
+      width: 100%;
+      height: 100%;
+      border-radius: 4rem;
+      display: block; 
+    }
+}

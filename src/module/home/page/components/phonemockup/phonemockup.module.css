@@ -1,0 +1,61 @@
+.phone {
+  width: 47.7rem;
+  height: 62.2rem;
+  background: #111;
+  border-radius: 4rem;
+  background-color: #88B702;
+}
+
+.phone h3 {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin-top: 2.5rem;
+  margin-right: 20rem;
+}
+
+.phone p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.phone img {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  margin-top: 7.8rem;
+  margin-left: 5rem;
+}
+
+@media (min-width: 390px) and (max-width: 1200px) {
+  .phone {
+    width: 90%;
+    max-width: 37rem;
+    padding: 4rem 0 3rem 0;
+    height: 53rem;
+  }
+
+  .phone h3 {
+    margin: 0 auto 1rem auto;
+    margin-right: 1.1rem;
+  }
+
+  .phone p {
+    width: 90%;
+    margin: 0 auto; 
+    line-height: 2.6rem;
+    font-size: 1.6rem;
+  }
+
+  .phone img {
+    width: 80%;
+    margin: 4rem auto 0 auto; 
+    display: block;
+    height: 33.6rem;
+  }
+}

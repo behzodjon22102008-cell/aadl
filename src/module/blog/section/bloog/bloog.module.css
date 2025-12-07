@@ -1,0 +1,70 @@
+.container {
+    height: 100vh;
+}
+
+.blog {
+    padding: 20rem 13rem;
+}
+
+.text {
+    display: flex;
+    gap: 60rem;
+}
+
+.text h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.text p {
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+}
+
+.card_img {
+    display: flex;
+    padding: 5rem 0;
+}
+
+.featured {
+    background-color: #FFFFFF1A;
+    padding: 5rem;
+    border-radius: 4rem;
+    width: 130rem;
+}
+
+.badge {
+  background-color: #88B702;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  display: inline-block;    
+  margin-bottom: 18px;   
+}
+
+.featured h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 4rem;
+    padding: 1rem 0;
+}
+
+.featured p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 1.5rem 0;
+}
+
+.image {
+    width: 100%;
+}
+
+.laptop {
+    width: 40%;
+    position: absolute;
+    left: 75rem;
+}
