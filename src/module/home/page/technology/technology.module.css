@@ -51,7 +51,7 @@
 }
 
 
-@media (min-width: 390px) and (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 1200px) {
 
     .desktop_text{
         display: none;
@@ -63,7 +63,7 @@
 
   .technology_section {
     flex-direction: column;
-    height: 51rem;
+    height: 54rem;
     padding: 4rem 2rem;
     text-align: center;
   }
@@ -94,7 +94,7 @@
 
   .phones {
     margin: 0;
-    margin-top: -3rem;
+    /* margin-top: -3rem; */
     display: flex;
     justify-content: center;
   }

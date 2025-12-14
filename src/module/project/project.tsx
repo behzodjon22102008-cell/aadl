@@ -1,9 +1,9 @@
-import { Projectss } from "./section/projects"
+import { Projectt } from "./section/projects"
 
 export const Project = () => {
     return (
         <div>
-        <Projectss />
+        <Projectt />
         </div>
     )
 }

@@ -1,31 +1,107 @@
-.cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    padding: 1rem 15rem;
-    gap: 28px;
+.principle {
+  padding: 8rem 10rem;
+  color: white;
 }
 
+/* ограничиваем ширину контента */
+.principle > * {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ===== Text block ===== */
 .text {
-    display: flex;
-    text-align: center;
-    padding: 0 15rem;
-    gap: 42.8rem;
-}
-
-.text p {
-    font-size: 1.8rem;
-    padding: 2rem;
-    width: 51rem;
-    text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-bottom: 6rem;
 }
 
 .text h3 {
-    font-size: 4.2rem;
-    font-weight: 700;
-    
+  font-size: 4.2rem;
+  font-weight: 700;
+  max-width: 400px;
+}
+
+.text p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  max-width: 520px;
+}
+
+/* ===== Cards ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.8rem;
+}
+
+/* ===================== */
+/* 📱 Mobile (320–480px) */
+/* ===================== */
+@media (max-width: 480px) {
+  .principle {
+    padding: 6rem 1.5rem;
+  }
+
+  .text {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .text h3 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================== */
+/* 📟 Tablet (481–1024px) */
+/* ===================== */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .text {
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .text h3 {
+    font-size: 3.6rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===================== */
+/* 🖥 Desktop (1025–1440px) */
+/* ===================== */
+@media (min-width: 1025px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===================== */
+/* 🖥🖥 Big screens (1441–2560px) */
+/* ===================== */
+@media (min-width: 1441px) {
+  .principle > * {
+    max-width: 1600px;
+  }
+
+  .text p {
+    margin-right: 20rem;
+  }
 }

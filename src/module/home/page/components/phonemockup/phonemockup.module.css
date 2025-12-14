@@ -1,9 +1,14 @@
 .phone {
   width: 47.7rem;
-  height: 62.2rem;
+  height: 62rem;
   background: #111;
+  background: #88B702;
   border-radius: 4rem;
-  background-color: #88B702;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left
 }
 
 .phone h3 {
@@ -11,8 +16,7 @@
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.6rem;
-  margin-top: 2.5rem;
-  margin-right: 20rem;
+  margin-bottom: 1.2rem;
 }
 
 .phone p {
@@ -21,41 +25,57 @@
   font-size: 1.6rem;
   line-height: 2.6rem;
   text-align: left;
-  margin-left: 10%;
 }
 
 .phone img {
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  margin-top: 7.8rem;
-  margin-left: 5rem;
+  margin: 5.9rem auto;
 }
 
-@media (min-width: 390px) and (max-width: 1200px) {
+/* 📱 Мобильные устройства (320–480px) */
+@media (max-width: 480px) {
   .phone {
-    width: 90%;
-    max-width: 37rem;
-    padding: 4rem 0 3rem 0;
-    height: 53rem;
+    height: 57rem;
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+    border-radius: 2rem;
   }
 
   .phone h3 {
-    margin: 0 auto 1rem auto;
-    margin-right: 1.1rem;
+    font-size: 1.8rem;
   }
 
   .phone p {
-    width: 90%;
-    margin: 0 auto; 
-    line-height: 2.6rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    max-width: 100%;
+  }
+
+  .phone img {
+    width: 85%;
+    /* margin-top: 3rem; */
+    margin: 10.4rem auto;
+  }
+}
+
+
+/* 📟 Планшеты (481–1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .phone {
+    width: 100%;
+    max-width: 40rem;
+    padding: 3rem 2rem;
   }
 
   .phone img {
     width: 80%;
-    margin: 4rem auto 0 auto; 
-    display: block;
-    height: 33.6rem;
+    margin-top: 0rem;
+  }
+}
+
+
+/* 🖥 Десктоп (1025–1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .phone {
+    max-width: 45rem;
   }
 }

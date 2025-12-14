@@ -1,61 +1,116 @@
 .card {
-  background-color: #FFFFFF1A;
-  padding: 50px 30px;
-  /* width: 585px; */
-  /* height: 295px; */
-  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3rem 2rem;
+  border-radius: 2.5rem;
   color: white;
   display: flex;
-  /* flex-direction: column; */
-  gap: 34px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .icon {
   width: 6rem;
   height: 6rem;
-}
-
-
-
-.card p {
-  font-size: 16px;
-  font-family: "DM Sans";
-  font-weight: 400;
-  line-height: 2.7rem;
-  max-width: 350px;
-  /* margin: 0; */
-  /* text-align: left; */
-  padding: 1rem 0;
+  flex-shrink: 0;
 }
 
 .card h3 {
   font-family: "DM Sans";
-  font-size: 19px;
+  font-size: 1.8rem;
   font-weight: 700;
-  font-style: bold;
-  /* line-height: 56px; */
-  /* margin-right: 90px; */
-  /* text-align: left; */
   margin: 0;
 }
 
-@media (min-width: 390px) and (max-width: 1200px) {
-  .card {
-    width: 80%;
+.card p {
+  font-family: "DM Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  max-width: 100%;
+  margin: 0;
+}
 
-    padding: 22px;
+/* ===================== */
+/* 📱 Mobile (320–480px) */
+/* ===================== */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
   }
 
   .card h3 {
-    font-size: 18px;
+    font-size: 1.6rem;
   }
 
   .card p {
-    font-size: 16px;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
   .icon {
-    width: 68px;
-    height: 68px;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* ===================== */
+/* 📟 Tablet (481–1024px) */
+/* ===================== */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .card {
+    padding: 2.5rem 2rem;
+    gap: 1.8rem;
+  }
+
+  .card h3 {
+    font-size: 1.7rem;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  .icon {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+
+/* ===================== */
+/* 🖥 Desktop (1025–1440px) */
+/* ===================== */
+@media (min-width: 1025px) {
+  .card {
+    padding: 3rem 2.5rem;
+    gap: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.8rem;
+  }
+
+  .card p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .icon {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+/* ===================== */
+/* 🖥🖥 Big screens (1441–2560px) */
+/* ===================== */
+@media (min-width: 1441px) {
+  .card {
+    max-width: 550px; /* ограничиваем карточку на больших экранах */
   }
 }

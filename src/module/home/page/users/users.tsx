@@ -64,7 +64,7 @@ export const Testimonials = () =>  {
              <Swiper
              modules={[Pagination]}
              pagination={{ clickable: true }}
-             spaceBetween={-115}
+             spaceBetween={-200}
              centeredSlides={false}
              slidesPerView={2}
              slidesPerGroup={2}
@@ -77,7 +77,7 @@ export const Testimonials = () =>  {
              768: {
              slidesPerView: 2,
              slidesPerGroup: 2,
-             spaceBetween: -115,
+             spaceBetween: -200,
             }
             }}
             >

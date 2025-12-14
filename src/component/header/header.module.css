@@ -85,7 +85,7 @@
     text-decoration: underline solid;
 }
 
-@media (min-width: 390px) and (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 1200px) {
 
     .top_nav {
         padding: 10px;

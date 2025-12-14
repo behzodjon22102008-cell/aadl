@@ -7,6 +7,7 @@ import { About } from "./module/about/about"
 import { Pricing } from "./module/pricing/pricing"
 import { Project } from "./module/project/project"
 import { Blog } from "./module/blog/blog"
+import { ContactUs } from "./module/contact-us/contact-us"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/pricing" element={<Pricing/>}></Route>
         <Route path="/projects" element={<Project />}></Route>
         <Route path="/blog" element={<Blog/>}></Route>
+        <Route path="/contact" element={<ContactUs />}></Route>
       </Routes>
 
       <Footer/>

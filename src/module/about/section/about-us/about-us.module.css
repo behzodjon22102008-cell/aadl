@@ -1,34 +1,109 @@
 .about_us {
-    /* display: flex; */
-    /* text-align: center;
-    margin: 0 auto;
-    padding: 0 200px;
-    margin-top: 200px; */
-
-      min-height: 90vh;
-  background: radial-gradient(
-    #1b6622 0%,
-    rgba(0, 0, 0, 1) 65%
-  );
-
+  /* min-height: 90vh; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; 
+  /* justify-content: center; */
+  align-items: center;
   color: white;
   font-family: "DM Sans";
   text-align: center;
-  margin: 0 auto;
-  padding-top: 10rem;
-  padding: 30rem 48rem;
+  padding: 8rem 2rem; 
+  box-sizing: border-box;
+    background: radial-gradient(
+    #1b6622 0%,
+    rgba(0, 0, 0, 1) 70%  
+  );
+  margin: 10rem 0;
 }
 
-.about_us h1 {
-    font-size: 6rem;
-}
-
+/* Ограничиваем ширину текста для больших экранов */
+.about_us h1,
 .about_us p {
-    font-size: 1.8rem;
-    font-weight: 400;
-   line-height: 3.2rem; 
+  max-width: 900px;
+}
+
+/* Заголовок */
+.about_us h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Абзац */
+.about_us p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  opacity: 0.9;
+}
+
+/* ===================== */
+/* 📱 Mobile (320–480px) */
+/* ===================== */
+@media (max-width: 480px) {
+  .about_us {
+    padding: 6rem 1.5rem;
+    text-align: left;
+    align-items: flex-start;
+    background: none;
+  }
+
+  .about_us h1 {
+    font-size: 3.2rem;
+  }
+
+  .about_us p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* ===================== */
+/* 📟 Tablet (481–1024px) */
+/* ===================== */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .about_us {
+    background: none;
+    padding: 7rem 2rem;
+  }
+
+  .about_us h1 {
+    font-size: 4.2rem;
+  }
+
+  .about_us p {
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+  }
+}
+
+/* ===================== */
+/* 🖥 Desktop (1025–1440px) */
+/* ===================== */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .about_us {
+    padding: 9rem 3rem;
+  }
+
+  .about_us p {
+    padding: 0 10rem;
+  }
+}
+
+/* ===================== */
+/* 🖥🖥 Big screens (1441–2560px) */
+/* ===================== */
+@media (min-width: 1441px) {
+  .about_us {
+    padding: 12rem 2rem;
+  }
+
+  .about_us h1,
+  .about_us p {
+    max-width: 1100px;
+  } 
+
+  .about_us p {
+    padding: 0 20rem;
+  }
 }
