@@ -3,13 +3,11 @@
   color: white;
 }
 
-/* ограничиваем ширину контента */
 .principle > * {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-/* ===== Text block ===== */
 .text {
   display: flex;
   justify-content: space-between;
@@ -30,17 +28,13 @@
   max-width: 520px;
 }
 
-/* ===== Cards ===== */
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.8rem;
 }
 
-/* ===================== */
-/* 📱 Mobile (320–480px) */
-/* ===================== */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .principle {
     padding: 6rem 1.5rem;
   }
@@ -65,10 +59,8 @@
   }
 }
 
-/* ===================== */
-/* 📟 Tablet (481–1024px) */
-/* ===================== */
-@media (min-width: 481px) and (max-width: 1024px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
   .text {
     flex-direction: column;
     gap: 2.5rem;
@@ -84,18 +76,14 @@
   }
 }
 
-/* ===================== */
-/* 🖥 Desktop (1025–1440px) */
-/* ===================== */
-@media (min-width: 1025px) {
+
+@media (min-width: 992px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* ===================== */
-/* 🖥🖥 Big screens (1441–2560px) */
-/* ===================== */
+
 @media (min-width: 1441px) {
   .principle > * {
     max-width: 1600px;

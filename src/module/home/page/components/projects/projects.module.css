@@ -1,132 +1,230 @@
-.home {
-  background-color: black;
-  min-height: 100vh;
+.section {
+  padding: 8rem 18rem;
   text-align: center;
-  color: white;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 6rem 2rem;
 }
 
-.home h1 {
-  font-family: "DM Sans";
+.section > * {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.title {
   font-size: 4.2rem;
-  font-weight: 700;
-  max-width: 900px; 
+  margin-bottom: 1rem;
 }
 
 .subtitle {
-  font-family: "DM Sans";
-  font-weight: 400;
-  font-size: 1.8rem;
+  margin: 0 auto 4.7rem;
+  max-width: 720px;
   line-height: 3.2rem;
-  max-width: 500px;
-  margin-top: 1rem;
+  font-size: 1.7rem;
+  padding: 0 15rem;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.7rem;
-  margin-top: 5rem;
 }
 
-.side_cards {
+
+.card {
+  background: #FFFFFF1A;
+  border-radius: 4rem;
+  padding: 2rem 3rem;
+  text-align: left;
+
+}
+
+.card h3 {
+  margin: 1.6rem 0 0.8rem;
+  font-size: 1.8rem;
+}
+
+.card p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.icon {
+  width: 6rem;
+  /* height: 48px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.center {
+  background: #88B702;
+  grid-row: span 2;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  justify-content: space-between;
 }
 
 
-/* 📱 Мобильные устройства (320–480px) */
-@media (max-width: 480px) {
-  .home {
-    padding: 0rem 1rem;
-    text-align: left;
-    align-items: flex-start;
+.center p {
+  /* color: #1a1a1a; */
+}
+
+.phone {
+  margin-top: 2.4rem;
+  height: 43rem;
+  width: 39rem;
+  /* border-radius: 400px; */
+  /* background: #1f1f1f; */
+}
+
+.phone img {
+  /* height: 464px; */
+  /* width: 320px; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 4.1rem 3rem;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 4rem 1.6rem;
   }
 
-  .home h1 {
-    font-size: 2.6rem;
-    line-height: 3.2rem;
-    max-width: 100%;
+  .title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    text-align: left;
   }
 
   .subtitle {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
     max-width: 100%;
-    margin: 0.5rem 0 2rem 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    margin-bottom: 3rem;
+    text-align: left;
   }
 
-  .content {
-    flex-direction: column;
+  .grid {
+    grid-template-columns: 1fr;
     gap: 2rem;
-    margin-top: 2rem;
   }
 
-  .side_cards {
+  .card {
+    padding: 2rem;
+    border-radius:  2.4rem;
+  }
+
+  .center {
+    grid-row: auto;
+    padding: 0 2rem;
+  }
+
+  .icon {
+    width: 5rem;
+    margin: 1.6rem 0;
+  }
+
+  .phone {
     width: 100%;
-    gap: 1.8rem;
-    align-items: center; /* карточки одинаковые */
+    max-width: 280px;
+    height: auto;
+    margin: 2rem auto 0;
   }
 
-  .content > * {
-    width: 100%; /* и карточки и mockup */
+  .phone img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    /* display: block; */
   }
 }
 
 
-/* 📟 Планшет (481–1024px) */
-@media (min-width: 481px) and (max-width: 1024px) {
-  .home {
-    text-align: left;
-    padding: 5rem 2rem;
-    align-items: flex-start;
+@media (min-width: 767px) and (max-width: 991px) {
+  .section {
+    padding: 6rem 4rem;
   }
 
-  .home h1 {
+  .title {
     font-size: 3.4rem;
   }
 
   .subtitle {
+    padding: 0;
     font-size: 1.6rem;
-    line-height: 2.6rem;
-    max-width: 80%;
+    line-height: 2.8rem;
   }
 
-  .content {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 3rem;
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .center {
+    grid-row: auto;
+    padding: 0 3rem;
+  }
+
+  .phone {
     width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 2rem auto 0;
   }
 
-  .side_cards {
-    gap: 2.5rem;
+  .phone img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: block;
   }
 }
 
 
-/* 🖥 Десктоп (1025–1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .home {
-    padding: 8rem 3rem;
+@media (min-width: 992px) and (max-width: 2560px) {
+  .section {
+    /* padding: 8rem 15rem; */
   }
 
-  .home h1 {
-    font-size: 4rem;
+  .title {
+    font-size: 4.2rem;
   }
 
   .subtitle {
-    font-size: 1.8rem;
-    max-width: 600px;
+    padding: 0;
+    max-width: 720px;
+    font-size: 1.7rem;
+    line-height: 3.2rem;
   }
 
-  .content {
-    gap: 4rem;
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.7rem;
   }
+
+  .card {
+    padding: 2.1rem 3rem;
+  }
+
+  .center {
+    grid-row: span 2;
+  }
+
+  /* .phone {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 2.4rem auto 0;
+  }
+
+  .phone img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: block;
+  } */
 }

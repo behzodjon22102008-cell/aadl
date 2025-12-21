@@ -16,20 +16,17 @@
   margin: 10rem 0;
 }
 
-/* Ограничиваем ширину текста для больших экранов */
 .about_us h1,
 .about_us p {
   max-width: 900px;
 }
 
-/* Заголовок */
 .about_us h1 {
   font-size: 5.6rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
 
-/* Абзац */
 .about_us p {
   font-size: 1.8rem;
   font-weight: 400;
@@ -37,10 +34,8 @@
   opacity: 0.9;
 }
 
-/* ===================== */
-/* 📱 Mobile (320–480px) */
-/* ===================== */
-@media (max-width: 480px) {
+
+@media (max-width: 767px) {
   .about_us {
     padding: 6rem 1.5rem;
     text-align: left;
@@ -58,10 +53,8 @@
   }
 }
 
-/* ===================== */
-/* 📟 Tablet (481–1024px) */
-/* ===================== */
-@media (min-width: 481px) and (max-width: 1024px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
   .about_us {
     background: none;
     padding: 7rem 2rem;
@@ -77,10 +70,8 @@
   }
 }
 
-/* ===================== */
-/* 🖥 Desktop (1025–1440px) */
-/* ===================== */
-@media (min-width: 1025px) and (max-width: 1440px) {
+
+@media (min-width: 992px) and (max-width: 2560px) {
   .about_us {
     padding: 9rem 3rem;
   }
@@ -90,9 +81,7 @@
   }
 }
 
-/* ===================== */
-/* 🖥🖥 Big screens (1441–2560px) */
-/* ===================== */
+
 @media (min-width: 1441px) {
   .about_us {
     padding: 12rem 2rem;

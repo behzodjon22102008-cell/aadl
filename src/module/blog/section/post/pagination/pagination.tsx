@@ -10,7 +10,6 @@ export const Pagination = ({currentPage, totalPages, onPageChange}:any) => {
     return (
     <div className={styles.pagination}>
       
-      {/* Prev */}
       <button
         className={styles.arrow_btn}
         disabled={currentPage === 1}
@@ -19,7 +18,6 @@ export const Pagination = ({currentPage, totalPages, onPageChange}:any) => {
         <span>&lt;</span>
       </button>
 
-      {/* Numbers */}
       {pages.map((pg) => (
         <button
           key={pg}
@@ -30,7 +28,6 @@ export const Pagination = ({currentPage, totalPages, onPageChange}:any) => {
         </button> 
       ))}
 
-      {/* Next */}
       <button
         className={styles.arrow_btn}
         disabled={currentPage === totalPages}

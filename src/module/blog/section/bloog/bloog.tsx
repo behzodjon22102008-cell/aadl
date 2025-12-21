@@ -4,23 +4,21 @@ import img from "../../../../assets/img/laptop.png";
 import { postData } from "../../constant/constants";
 import { Link } from "react-router-dom";
 
-export default function Bloog() {
-  // ---------------------------------------------------------------------------
+// Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
+export default function Bloog() {
   return (
     <>
+      {/* Blog title */}
       <section>
         <div className={`${styles.blog} ${styles.container}`}>
-          <span className={styles.blogTexts}>
-            <h1 className={styles.blogTitle}>Blog</h1>
-          </span>
+          <h1 className={styles.blogTitle}>Blog</h1>
         </div>
       </section>
 
-      {/*---------------------------------------------------------------------------
-      /// HeaderBlog
-      ---------------------------------------------------------------------------*/}
-
+      {/* HeaderBlog */}
       <section className={styles.container}>
         <div className={styles.head}>
           <div className={styles.headCard}>
@@ -37,13 +35,10 @@ export default function Bloog() {
         </div>
       </section>
 
-      {/*---------------------------------------------------------------------------
-      /// Latest Posts
-      ---------------------------------------------------------------------------*/}
-
+      {/* Latest Posts */}
       <section>
         <div className={`${styles.posts} ${styles.container}`}>
-          <span className={styles.postHead}>
+          <div className={styles.postHead}>
             <h1 className={styles.postHeadTitle}>Latest Posts</h1>
             <div className={styles.postBtns}>
               <button className={styles.postButton}>All</button>
@@ -51,42 +46,99 @@ export default function Bloog() {
               <button className={styles.postButton}>Products</button>
               <button className={styles.postButton}>Tutorial</button>
             </div>
-          </span>
+          </div>
 
-          <div className={styles.postCards}>
-            {postData.map((info, index) => (
-              <Link to={info.link}>
-                <div key={index} className={styles.postCard}>
-                  <img
-                    className={styles.postCardImg}
-                    src={info.img}
-                    alt="image"
-                  />
-                  <button className={styles.postCardButton}>
-                    {info.btnText}
-                  </button>
-                  <h3 className={styles.postCardTitle}>{info.title}</h3>
-                  <p className={styles.postCardDescription}>
-                    {info.description}
-                  </p>
-                  <hr className={styles.postCardLine} />
-                  <div className={styles.user}>
+          {/* 🔹 MOBILE + TABLET → CAROUSEL */}
+          <div className={styles.mobileCarousel}>
+            <Swiper
+              spaceBetween={26}
+              slidesPerView={1}
+              breakpoints={{
+                768: {
+                  slidesPerView: 2,
+                },
+              }}
+            >
+              {postData.map((info, index) => (
+                <SwiperSlide key={index}>
+                  <Link to={info.link}>
+                    <div className={styles.postCard}>
+                      <img
+                        className={styles.postCardImg}
+                        src={info.img}
+                        alt="image"
+                      />
+                      <button className={styles.postCardButton}>
+                        {info.btnText}
+                      </button>
+                      <h3 className={styles.postCardTitle}>{info.title}</h3>
+                      <p className={styles.postCardDescription}>
+                        {info.description}
+                      </p>
+                      <hr className={styles.postCardLine} />
+                      <div className={styles.user}>
+                        <img
+                          className={styles.avatarIcon}
+                          src={info.avatar}
+                          alt="avatar"
+                        />
+                        <div className={styles.userInfo}>
+                          <h4 className={styles.userFullName}>
+                            {info.full_name}
+                          </h4>
+                          <h5 className={styles.aboutUser}>
+                            {info.about_user}
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+          {/* 🔹 DESKTOP → FLEX */}
+          <div className={styles.desktopGrid}>
+            <div className={styles.postCards}>
+              {postData.map((info, index) => (
+                <Link key={index} to={info.link}>
+                  <div className={styles.postCard}>
                     <img
-                      className={styles.avatarIcon}
-                      src={info.avatar}
-                      alt="avatar"
-                    />
-                    <span className={styles.userInfo}>
-                      <h4 className={styles.userFullName}>{info.full_name}</h4>
-                      <h5 className={styles.aboutUser}>{info.about_user}</h5>
-                    </span>
+                      className={styles.postCardImg}
+                      src={info.img}
+                      alt="image"
+                      />
+                    <button className={styles.postCardButton}>
+                      {info.btnText}
+                    </button>
+                    <h3 className={styles.postCardTitle}>{info.title}</h3>
+                    <p className={styles.postCardDescription}>
+                      {info.description}
+                    </p>
+                    <hr className={styles.postCardLine} />
+                    <div className={styles.user}>
+                      <img
+                        className={styles.avatarIcon}
+                        src={info.avatar}
+                        alt="avatar"
+                      />
+                      <div className={styles.userInfo}>
+                        <h4 className={styles.userFullName}>
+                          {info.full_name}
+                        </h4>
+                        <h5 className={styles.aboutUser}>
+                          {info.about_user}
+                        </h5>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
     </>
   );
-}
+};

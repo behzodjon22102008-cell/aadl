@@ -190,8 +190,8 @@
 }
 
 .avatarIcon {
-  width: 6rem;
-  height: 6rem;
+  /* width: 6rem;
+  height: rem; */
   border-radius: 50%;
 }
 
@@ -229,9 +229,6 @@
     padding: 0 6rem;
   }
 
-  /*---------------------------------------------------------------------------
-      /// HeaderBlog
---------------------------------------------------------------------------- */
 
   .headCard {
     padding-left: 3rem;
@@ -242,9 +239,6 @@
     width: 45%;
   }
 
-  /*---------------------------------------------------------------------------
-      /// Latest Posts
---------------------------------------------------------------------------- */
 
   .postCard {
     width: 34rem;
@@ -270,16 +264,10 @@
     line-height: 5rem;
   }
 
-  /*---------------------------------------------------------------------------
-      /// HeaderBlog
---------------------------------------------------------------------------- */
   .head {
     display: none;
   }
 
-  /*---------------------------------------------------------------------------
-      /// Latest Posts
---------------------------------------------------------------------------- */
 
   .postHead {
     flex-direction: column;
@@ -311,17 +299,11 @@
     text-align: start;
   }
 
-  /*---------------------------------------------------------------------------
-      /// HeaderBlog
---------------------------------------------------------------------------- */
 
   .head {
     display: none;
   }
 
-  /*---------------------------------------------------------------------------
-      /// Latest Posts
---------------------------------------------------------------------------- */
 
   .postHead {
     flex-direction: column;
@@ -351,8 +333,8 @@
   }
 
   .avatarIcon {
-    width: 6rem;
-    height: 6rem;
+    /* width: 6rem;
+    height: 6rem; */
   }
 }
 
@@ -371,17 +353,11 @@
     line-height: 4rem;
   }
 
-  /*---------------------------------------------------------------------------
-      /// HeaderBlog
---------------------------------------------------------------------------- */
 
   .head {
     display: none;
   }
 
-  /*---------------------------------------------------------------------------
-      /// Latest Posts
---------------------------------------------------------------------------- */
 
   .postHead {
     flex-direction: column;
@@ -417,10 +393,7 @@
     margin-top: 0.7rem;
   }
 
-  .avatarIcon {
-    width: 5rem;
-    height: 5em;
-  }
+
 
   .userFullName {
     margin-top: 0;
@@ -430,5 +403,44 @@
   .aboutUser {
     margin-top: 0;
     font-size: 1.4rem;
+  }
+}
+
+
+.mobileCarousel {
+  display: none;
+}
+
+.desktopGrid {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .mobileCarousel {
+    display: block;
+  }
+
+  .desktopGrid {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mobileCarousel {
+    display: block;
+  }
+
+  .desktopGrid {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobileCarousel {
+    display: none;
+  }
+
+  .desktopGrid {
+    display: block;
   }
 }

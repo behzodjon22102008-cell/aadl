@@ -51,56 +51,139 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 2560px) {
+  .technology_section {
+    /* flex-direction: row; */
+    justify-content: space-around;
+    height: 45rem;
+    padding: 3rem 6rem;
+    gap: 1.3rem;
+  }
 
-    .desktop_text{
-        display: none;
-    }
+  .text {
+    max-width: 65rem;
+    margin-left: 7rem;
+  }
 
-    .desktop_p{
-        display: none;
-    }
+  .desktop_text,
+  .desktop_p {
+    display: block;
+  }
 
+  .mobile_text,
+  .mobile_p {
+    display: none;
+  }
+
+  .phones {
+    height: 71.4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .phones img {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width: 767px) and (max-width: 991px) {
   .technology_section {
     flex-direction: column;
-    height: 54rem;
-    padding: 4rem 2rem;
+    height: 60rem;
+    padding: 6rem 4rem;
     text-align: center;
   }
 
   .text {
     margin-left: 0;
-    max-width: 36rem;
+    max-width: 48rem;
+  }
+
+  .desktop_text,
+  .desktop_p {
+    display: none;
   }
 
   .mobile_text {
     display: block;
-    font-family: "DM Sans";
-    font-size: 2.8rem;
-    line-height: 3.6rem;
-    font-weight: 700;
-    margin-bottom: 1.2rem;
-    color: white;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 1.6rem;
   }
 
   .mobile_p {
     display: block;
-    font-family: "DM Sans";
     font-size: 1.6rem;
-    line-height: 2.6rem;
-    margin-bottom: 2rem;
-    color: white;
+    line-height: 2.8rem;
+    margin-bottom: 2.4rem;
   }
 
   .phones {
     margin: 0;
-    /* margin-top: -3rem; */
     display: flex;
     justify-content: center;
   }
 
   .phones img {
-    width: 26.7rem;
-    height: 20rem;
+    width: 32rem;
+    height: auto;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 612px) {
+  .phones img {
+    height: 27.5rem;
+  }
+}
+
+@media (min-width: 613px) and (max-width: 767px) {
+  .phones img {
+    height: 33.5rem;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .technology_section {
+    flex-direction: column;
+    height: 55rem;
+    padding: 4rem 1.6rem;
+    text-align: center;
+  }
+
+  .text {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .desktop_text,
+  .desktop_p {
+    display: none;
+  }
+
+  .mobile_text {
+    display: block;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .mobile_p {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .phones {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .phones img {
+    width: 26rem;
+    /* height: auto; */
   }
 }

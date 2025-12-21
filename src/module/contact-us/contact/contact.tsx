@@ -9,7 +9,6 @@ export const Contact =  () => {
         <h2 className={styles.contact_title}>Get in touch</h2>
 
         <div className={styles.contact_grid}>
-          {/* LEFT FORM */}
           <form className={styles.contact_form}>
             <div className={styles.form_row}>
               <div className={styles.form_group}>
@@ -43,7 +42,6 @@ export const Contact =  () => {
             <button className={styles.btn_send}>SEND MESSAGE</button>
           </form>
 
-          {/* RIGHT SIDE */}
           <div className={styles.contact_info}>
             <h3>Want to reach us directly?</h3>
             <p>

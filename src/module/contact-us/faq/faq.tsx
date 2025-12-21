@@ -11,12 +11,12 @@ const faqData = [
 ];
 
 export const Faq = () => {
-     const [openItems, setOpenItems] = useState({}); // объект с состоянием каждого пункта
+     const [openItems, setOpenItems] = useState({}); 
 
   const toggle = (index:any) => {
     setOpenItems((prev) => ({
       ...prev,
-      [index]: !prev[index], // переключаем только один пункт
+      [index]: !prev[index], 
     }));
   };
 

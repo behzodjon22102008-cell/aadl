@@ -26,7 +26,6 @@
   max-width: 550px;
 }
 
-/* 📱 Мобильная версия — 320px - 480px */
 @media (max-width: 480px) {
   .hero {
     background: black;
@@ -50,7 +49,6 @@
   }
 }
 
-/* 📟 Планшет — 481px - 1024px */
 @media (min-width: 481px) and (max-width: 1024px) {
   .hero {
     background: black;
@@ -72,7 +70,6 @@
   }
 }
 
-/* 🖥 Десктоп — 1025px - 1440px */
 @media (min-width: 1025px) and (max-width: 1440px) {
   .hero {
     padding: 30rem 0 20rem 0;
