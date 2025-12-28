@@ -12,7 +12,6 @@
 .text {
     max-width: 65rem;
     margin-left: 7rem;
-    /* margin-bottom: 30px; */
 }
 
 .desktop_text {
@@ -185,5 +184,12 @@
   .phones img {
     width: 26rem;
     /* height: auto; */
+  }
+}
+
+
+@media (min-width: 991px) and (max-width: 1024px) {
+  .phones img {
+    margin: 24rem 0;
   }
 }

@@ -10,11 +10,10 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 24px 24px;
-  max-width: 1210px;
-  margin: 0 auto;
+  padding: 24px 2.4rem;
+  max-width: 2560px;
 }
 
 .top_nav {

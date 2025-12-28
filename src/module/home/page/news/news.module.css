@@ -62,14 +62,17 @@
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .desktopGrid {
     display: none;
   }
 
   .mobileSlider {
     display: block;
-    padding: 0 2rem 4rem;
+    /* padding: 0 2rem 4rem; */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -146,5 +149,23 @@
 
   .articles {
     padding: 0 2rem;
+  }
+}
+
+
+/* 👉 ТОЛЬКО 390–1200 */
+@media (min-width: 390px) and (max-width: 1200px) {
+  .mobileSlider {
+    display: block;
+  }
+
+  .sliderWrapper {
+    max-width: 36rem; /* ширина карточки */
+    margin: 0 auto;
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -226,3 +226,17 @@
     width: 3.8rem;
   }
 }
+
+
+@media (min-width: 991px) and (max-width: 1166px) {
+  .advantages_section {
+    display: flex;
+    justify-content: space-between;
+    gap: 25rem;
+  }
+
+  .phone {
+    width: 130%;
+    height: -webkit-fill-available;
+  }
+}

@@ -20,7 +20,7 @@ export const News = () => {
         <Card />
       </div>
 
-      <div className={styles.mobileSlider}>
+      {/* <div className={styles.mobileSlider}>
         <Swiper
           modules={[Pagination]}
           pagination={{ clickable: true }}
@@ -31,7 +31,28 @@ export const News = () => {
           <SwiperSlide><Card /></SwiperSlide>
           <SwiperSlide><Card /></SwiperSlide>
         </Swiper>
-      </div>
+      </div> */}
+
+      <div className={styles.mobileSlider}>
+  <div className={styles.sliderWrapper}>
+    <Swiper
+      modules={[Pagination]}
+      pagination={{ clickable: true }}
+      slidesPerView={1}
+      spaceBetween={20}
+    >
+      <SwiperSlide className={styles.slide}>
+        <Card />
+      </SwiperSlide>
+      <SwiperSlide className={styles.slide}>
+        <Card />
+      </SwiperSlide>
+      <SwiperSlide className={styles.slide}>
+        <Card />
+      </SwiperSlide>
+    </Swiper>
+  </div>
+</div>
 
       <div className={styles.articles}>
         <ButtonArticles text="View All Articles" />

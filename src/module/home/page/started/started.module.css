@@ -1,14 +1,14 @@
 .container {
   display: flex;
   background-color: black;
-  height: 90vh;
   align-items: center;
-  gap: 6.1rem;
+  gap: 5rem;
+  padding: 10rem 0;
 }
 
 .text {
   max-width: 42rem;
-  margin-left: 18rem;
+  margin-left: 10rem;
 }
 
 .text h2 {
@@ -48,7 +48,7 @@
 
 .vidio_container {
   width: 56rem;
-  height: 35rem;
+  height: 35rem; 
   border-radius: 4rem;
   background-color: #FFFFFF1A;
   display: flex;
@@ -136,6 +136,7 @@ video {
     width: 100%;
     max-width: 60rem;
     height: 38rem;
+    margin-right: 5rem;
   }
 }
 
@@ -144,6 +145,10 @@ video {
 @media (min-width: 992px) and (max-width: 2560px) {
   .container {
     justify-content: space-between;
+  }
+
+  .vidio_container {
+    margin-right: 5rem;
   }
 }
 

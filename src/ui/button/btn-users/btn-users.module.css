@@ -1,25 +1,26 @@
 .btn_users {
-    display: none;
+  display: none;
 }
 
-@media (min-width:390px) and (max-width:1200px) {
-    .btn_users {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 330px;
-        height: 70px;
-        font-size: 16px;
-        font-weight: 700;
-        align-items: center;
-        background-color: #88B702;
-        color: white;
-        border-radius: 50px;
-        line-height: 16px;
-        /* display: flex; */
-        /* justify-content: center; */
-        border: none;
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
+/* ===== 320px – 1300px ===== */
+@media (min-width: 320px) and (max-width: 1300px) {
+  .btn_users {
+    display: flex;                /* 🔥 обязательно */
+    align-items: center;
+    justify-content: center;
+
+    width: 330px;
+    height: 70px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+
+    background-color: #88B702;
+    color: white;
+    border-radius: 50px;
+    border: none;
+
+    margin: 0 auto 20px;          
+  }
 }

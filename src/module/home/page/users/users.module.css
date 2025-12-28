@@ -123,6 +123,8 @@
     padding: 3rem;
     margin: 0 auto;
     border-radius: 3.6rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .testimonial_card p {
@@ -171,4 +173,32 @@
     width: 9px;
     height: 9px;
   }
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+  .testimonials {
+    padding: 6rem 2rem;
+  }
+
+  .testimonials h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .testimonial_card {
+    width: 100%;
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+
+  :global(.swiper) {
+  width: 100%;
+}
+
+:global(.swiper-wrapper) {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
 }
