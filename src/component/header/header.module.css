@@ -159,3 +159,11 @@
     display: block;
   }
 }
+
+@media (min-width: 2000px) and (max-width: 2560px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 30rem;
+  }
+}
