@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 .header {
   position: absolute;
@@ -30,7 +29,7 @@
 .line {
   width: 1px;
   height: 66px;
-  background-color: #FFFFFF1A;
+  background-color: #ffffff1a;
 }
 
 .navigation {
@@ -48,12 +47,16 @@
 
 .navigation a:hover {
   text-decoration: underline;
+  color: #88b702;
+}
+
+.navigation a:focus {
+  color: #7da808;
 }
 
 .btn {
   display: block;
 }
-
 
 .burger {
   display: none;
@@ -62,12 +65,11 @@
   font-size: 28px;
   color: white;
   cursor: pointer;
-  background-color: #88B702;
+  background-color: #88b702;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
 }
-
 
 .mobile_menu {
   position: absolute;
@@ -92,16 +94,15 @@
   opacity: 0.7;
 }
 
-
 @media (max-width: 767px) {
   .nav {
     padding: 16px;
   }
 
   .top_nav {
-         padding: 10px;
-        width: 100%;
-        justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .line {
@@ -120,18 +121,16 @@
     display: flex;
   }
 }
-
-
 
 @media (min-width: 767px) and (max-width: 992px) {
   .navigation {
     display: none;
   }
 
-    .top_nav {
-         padding: 10px;
-        width: 100%;
-        justify-content: space-between;
+  .top_nav {
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .btn {
@@ -146,7 +145,6 @@
     display: flex;
   }
 }
-
 
 @media (min-width: 992px) {
   .burger {

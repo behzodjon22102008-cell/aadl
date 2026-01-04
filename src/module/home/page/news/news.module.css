@@ -60,9 +60,7 @@
   background: white;
 }
 
-
-
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .desktopGrid {
     display: none;
   }
@@ -75,8 +73,6 @@
     justify-content: center;
   }
 }
-
-
 
 @media (min-width: 992px) and (max-width: 2560px) {
   .container {
@@ -102,7 +98,6 @@
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     padding: 8rem 0;
@@ -125,7 +120,6 @@
   }
 }
 
-
 @media (max-width: 767px) {
   .container {
     padding: 6rem 0;
@@ -137,6 +131,7 @@
 
   .text h2 {
     font-size: 2.8rem;
+    margin: 0 auto;
   }
 
   .about_it {
@@ -151,7 +146,6 @@
     padding: 0 2rem;
   }
 }
-
 
 /* 👉 ТОЛЬКО 390–1200 */
 @media (min-width: 390px) and (max-width: 1200px) {
@@ -169,3 +163,47 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 390px) {
+  .slide {
+    width: 32rem;
+    max-width: 50rem;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 900px) {
+  .mobileSlider {
+    display: none;
+  }
+
+  .desktopGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 120rem;
+    margin: 0 1rem 5rem;
+    overflow-x: scroll;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .mobileSlider {
+    display: none;
+  }
+
+  .desktopGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 120rem;
+    margin: 0 auto 5rem;
+    /* overflow-x: scroll;
+    scroll-snap-type: x mandatory; */
+  }
+}
+
+/* @media (min-width: 400px) and (max-width: 426px) {
+  .slide {
+    margin: 0 0 0 30rem;
+  }
+} */

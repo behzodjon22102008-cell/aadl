@@ -1,51 +1,51 @@
 .container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 7.3rem 0 20rem 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 7.3rem 0 20rem 0;
 }
 
 .text {
-    text-align: center;
-    /* margin-bottom: 4rem; */
-    /* margin-top: 10rem; */
-    /* padding: 10rem 0; */
-    margin: 7.3rem 0 4rem 0rem;
+  text-align: center;
+  /* margin-bottom: 4rem; */
+  /* margin-top: 10rem; */
+  /* padding: 10rem 0; */
+  margin: 7.3rem 0 4rem 0rem;
 }
 
 .text h1 {
-    font-size: 5rem;
-    font-weight: 700;
+  font-size: 5rem;
+  font-weight: 700;
 }
 
 .text p {
-    font-size: 1.8rem;
-    font-weight: 400;
-    padding: 1.6rem 45rem;
-    color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.6rem 45rem;
+  color: white;
 }
 
 .usd {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 2.6rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2.6rem;
 }
 
 .card {
-    width: 32rem;
-    background: #FFFFFF1A;
-    padding: 4rem 3rem;
-    border-radius: 3rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
+  width: 38rem;
+  background: #ffffff1a;
+  padding: 4rem 3rem;
+  border-radius: 3rem;
+  color: white;
+  display: grid;
+  flex-direction: column;
 }
 
 .badge {
   display: inline-block;
   padding: 1rem 1.2rem;
-  background: #88B702;
+  background: #88b702;
   color: white;
   font-weight: 500;
   border-radius: 2rem;
@@ -96,7 +96,7 @@
   width: 100%;
   border: none;
   border-radius: 3.5rem;
-  background-color: #88B702;
+  background-color: #88b702;
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -111,60 +111,59 @@
   display: none;
 }
 
-
 @media (max-width: 1024px) {
-    .text p {
-        padding: 0 10rem;
-    }
+  .text p {
+    padding: 0 10rem;
+  }
 
-    .usd {
-        gap: 2rem;
-    }
+  .usd {
+    gap: 2rem;
+  }
 
-    .card {
-        width: 28rem;
-    }
+  .card {
+    width: 32rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .text h1 {
-        font-size: 4rem;
-    }
+  .text h1 {
+    font-size: 4rem;
+  }
 
-    .text p {
-        padding: 0 5rem;
-        font-size: 1.6rem;
-    }
+  .text p {
+    padding: 0 5rem;
+    font-size: 1.6rem;
+  }
 
-    .usd {
-        flex-direction: column;
-        align-items: center;
-    }
+  .usd {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .card {
-        width: 90%;
-        max-width: 40rem;
-    }
+  .card {
+    width: 90%;
+    max-width: 40rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .text h1 {
-        font-size: 3.2rem;
-    }
+  .text h1 {
+    font-size: 3.2rem;
+  }
 
-    .text p {
-        padding: 0;
-        font-size: 1.4rem;
-    }
+  .text p {
+    padding: 0;
+    font-size: 1.4rem;
+  }
 
-    .card {
-        width: 100%;
-        padding: 3rem 2rem;
-    }
+  .card {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
 
-    .card h2 {
-        font-size: 3rem;
-    }
+  .card h2 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 320px) {
@@ -172,24 +171,24 @@
     padding: 0 3rem;
     /* text-align: left;   */
   }
-    .text h1 {
-        font-size: 2.6rem;
-        /* align-items: center;
+  .text h1 {
+    font-size: 2.6rem;
+    /* align-items: center;
         justify-content: center; */
-        text-align: left;
-    }
+    text-align: left;
+  }
 
-    .text p {
-      text-align: left;
-    }
+  .text p {
+    text-align: left;
+  }
 
-    .card {
-        padding: 2.5rem 1.5rem;
-    }
+  .card {
+    padding: 2.5rem 1.5rem;
+  }
 
-    .card h2 {
-        font-size: 2.6rem;
-    }
+  .card h2 {
+    font-size: 2.6rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -204,9 +203,27 @@
 
   .card {
     width: 100%;
+    margin: 0 auto;
+    max-width: 25rem;
   }
 
   .text p {
     padding: 0;
+    /* margin: 2rem 15rem; */
+  }
+}
+
+@media (min-width: 425px) and (max-width: 500px) {
+  .card {
+    margin: 0 48rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    max-width: 35rem;
+    margin: 0 0 0 94rem;
   }
 }

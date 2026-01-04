@@ -7,10 +7,10 @@ export const Prising = () => {
     <div className={styles.container}>
       <div className={styles.text}>
         <h1>Pricing</h1>
-        <p>
+        {/* <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Feugiat nulla suspendisse tortor aenean dis placerat.
-        </p>
+        </p> */}
       </div>
 
       <div className={styles.mobile}>

@@ -16,19 +16,19 @@ export const Computer = () => {
                 <ul className={styles.list}>
                     <li>
                         <img src={FullIcon} alt="" />
-                        Full confidentiality powered by advanced <br /> 
+                        Full confidentiality powered by advanced  
                         security standards.
                     </li>
 
                     <li>
                         <img src={PercentageIcon} alt="" />
-                        Reliable systems built for continuous, <br />
+                        Reliable systems built for continuous, 
                         stable performance.
                     </li>
 
                     <li>
                         <img src={MessageIcon} alt="" />
-                        Professional assistance whenever your <br />
+                        Professional assistance whenever your 
                         business needs it.
                     </li>
                 </ul>

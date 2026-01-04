@@ -46,7 +46,7 @@
 }
 
 .computer {
-    margin-bottom: 15rem;  
+  margin-bottom: 15rem;
 }
 
 @media (min-width: 992px) and (max-width: 2560px) {
@@ -71,12 +71,11 @@
   }
 
   .apple_computer {
-     width: 100%;
-     justify-content: left;
-     margin-left: 4rem;
+    width: 100%;
+    justify-content: left;
+    margin-left: 4rem;
   }
 }
-
 
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -88,6 +87,7 @@
   .text {
     margin: 0;
     max-width: 100%;
+    margin-left: 15rem;
   }
 
   .text h2 {
@@ -109,7 +109,6 @@
     max-width: 560px;
   }
 }
-
 
 @media (max-width: 767px) {
   .container {
@@ -153,13 +152,12 @@
   }
 }
 
-
 @media (min-width: 991px) and (max-width: 1166px) {
   .computer {
-    margin-bottom: -8rem;  
-}
+    margin-bottom: -8rem;
+  }
 
-.list li {
-  font-size: 1.5rem;
-}
+  .list li {
+    font-size: 1.5rem;
+  }
 }

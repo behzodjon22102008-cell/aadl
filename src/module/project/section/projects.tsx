@@ -43,7 +43,7 @@ export const Projectt = () => {
   breakpoints={{
     320: { slidesPerView: 1 },
     768: { slidesPerView: 2 },
-    1280: { slidesPerView: 3 },
+    1020: { slidesPerView: 3 },
   }}
 >
         {postData.map((info, index) => (

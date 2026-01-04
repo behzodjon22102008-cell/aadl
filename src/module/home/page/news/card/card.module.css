@@ -1,9 +1,10 @@
 .card {
-  width: 36rem;
-  height: 59rem;
+  /* width: 36rem;
+  height: 59rem; */
   background: #1e1e1e;
   border-radius: 4rem;
   color: #fff;
+  /* margin: 0 auto; */
 }
 
 .card_img {
@@ -11,9 +12,8 @@
   display: block;
 }
 
-
 .tag {
-  background: #88B702;
+  background: #88b702;
   z-index: 10;
   color: white;
   font-weight: 500;
@@ -62,14 +62,46 @@
 }
 
 .blog_card {
-    font-family: "DM Sans";
-    padding: 2rem;
+  font-family: "DM Sans";
+  padding: 2rem;
 }
 
 .line {
-    width: 33.6rem;
-    height: 1px;
-    background-color: #FFFFFF1A;
-    margin-top: 3.5rem;
+  /* width: 33.6rem; */
+  height: 1px;
+  background-color: #ffffff1a;
+  margin-top: 3.5rem;
 }
 
+@media (max-width: 370px) {
+  .card {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 380px) {
+  .card {
+    width: 36rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 426px) {
+  .card {
+    width: 33rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .card {
+    width: 35rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .card {
+    width: 30rem;
+    margin: 0 auto;
+  }
+}

@@ -79,7 +79,7 @@
 --------------------------------------------------------------------------- */
 
 .posts {
-  margin-top: 17rem;
+  margin-top: 13rem;
   margin-bottom: 8rem;
 }
 
@@ -118,7 +118,7 @@
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
-  cursor: pointer;   
+  cursor: pointer;
   transition: 0.1s ease;
   /* margin-left: 5rem; */
   /* padding-left: 5rem; */
@@ -232,7 +232,6 @@
     padding: 0 6rem;
   }
 
-
   .headCard {
     padding-left: 3rem;
     width: 50%;
@@ -241,7 +240,6 @@
   .headImg {
     width: 45%;
   }
-
 
   .postCard {
     width: 34rem;
@@ -270,7 +268,6 @@
   .head {
     display: none;
   }
-
 
   .postHead {
     flex-direction: column;
@@ -302,11 +299,9 @@
     text-align: start;
   }
 
-
   .head {
     display: none;
   }
-
 
   .postHead {
     flex-direction: column;
@@ -347,7 +342,7 @@
   }
 
   .blog {
-    margin-bottom: 0;
+    margin: 15rem 0.5rem 0 0;
   }
 
   .blogTitle {
@@ -356,11 +351,9 @@
     line-height: 4rem;
   }
 
-
   .head {
     display: none;
   }
-
 
   .postHead {
     flex-direction: column;
@@ -396,8 +389,6 @@
     margin-top: 0.7rem;
   }
 
-
-
   .userFullName {
     margin-top: 0;
     font-size: 1.4rem;
@@ -408,7 +399,6 @@
     font-size: 1.4rem;
   }
 }
-
 
 .mobileCarousel {
   display: none;
@@ -445,5 +435,23 @@
 
   .desktopGrid {
     display: block;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 376px) {
+  .postCard {
+    margin: 3rem 3rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 426px) {
+  .postCard {
+    margin: 2rem 103rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 768px) {
+  .postCard {
+    margin: 0 75rem;
   }
 }

@@ -5,22 +5,28 @@
 /* ===== 320px – 1300px ===== */
 @media (min-width: 320px) and (max-width: 1300px) {
   .btn_users {
-    display: flex;                /* 🔥 обязательно */
+    display: flex; /* 🔥 обязательно */
     align-items: center;
     justify-content: center;
 
-    width: 330px;
+    width: 30rem;
     height: 70px;
 
     font-size: 16px;
     font-weight: 700;
     line-height: 16px;
 
-    background-color: #88B702;
+    background-color: #88b702;
     color: white;
     border-radius: 50px;
     border: none;
 
-    margin: 0 auto 20px;          
+    margin: 0 1rem 30px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 426px) {
+  .btn_users {
+    margin: 3rem auto;
   }
 }

@@ -88,7 +88,6 @@
   line-height: 2.4rem;
 }
 
-
 @media (max-width: 767px) {
   .container {
     padding: 6rem 1.5rem;
@@ -116,8 +115,35 @@
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 991px) {
+  .planet {
+    flex-direction: column;
+  }
+
+  .text {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mission h2,
+  .story h3,
+  .skils h3 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 2560px) {
+  .text {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 426px) {
   .planet {
     flex-direction: column;
   }
@@ -130,19 +156,5 @@
   .story h3,
   .skils h3 {
     font-size: 3.6rem;
-  }
-}
-
-
-@media (min-width: 992px) and (max-width: 2560px) {
-  .text {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-
-@media (min-width: 1441px) {
-  .container {
-    max-width: 1600px;
   }
 }

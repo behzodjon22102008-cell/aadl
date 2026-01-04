@@ -7,12 +7,9 @@
   color: white;
   font-family: "DM Sans";
   text-align: center;
-  padding: 8rem 2rem; 
+  padding: 8rem 2rem;
   box-sizing: border-box;
-    background: radial-gradient(
-    #1b6622 0%,
-    rgba(0, 0, 0, 1) 70%  
-  );
+  background: radial-gradient(#1b6622 0%, rgba(0, 0, 0, 1) 70%);
   margin: 10rem 0;
 }
 
@@ -34,13 +31,13 @@
   opacity: 0.9;
 }
 
-
 @media (max-width: 767px) {
   .about_us {
-    padding: 6rem 1.5rem;
+    padding: 10rem 1.5rem 0;
     text-align: left;
     align-items: flex-start;
     background: none;
+    margin: 0;
   }
 
   .about_us h1 {
@@ -52,7 +49,6 @@
     line-height: 2.4rem;
   }
 }
-
 
 @media (min-width: 768px) and (max-width: 991px) {
   .about_us {
@@ -70,7 +66,6 @@
   }
 }
 
-
 @media (min-width: 992px) and (max-width: 2560px) {
   .about_us {
     padding: 9rem 3rem;
@@ -81,7 +76,6 @@
   }
 }
 
-
 @media (min-width: 1441px) {
   .about_us {
     padding: 12rem 2rem;
@@ -90,7 +84,7 @@
   .about_us h1,
   .about_us p {
     max-width: 1100px;
-  } 
+  }
 
   .about_us p {
     padding: 0 20rem;

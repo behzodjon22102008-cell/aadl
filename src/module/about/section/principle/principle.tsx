@@ -11,7 +11,7 @@ export const Principle = () => {
         <div className={styles.principle}>
             <div className={styles.text}>
                 <h3>Our principles</h3>
-                <p>Our principles are quality, transparency, responsibility, and a personalized approach to every project.</p>
+                {/* <p>Our principles are quality, transparency, responsibility, and a personalized approach to every project.</p> */}
             </div>
             <div className={styles.cards}>
             <Card

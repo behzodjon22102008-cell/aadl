@@ -69,7 +69,7 @@ textarea {
   width: 20rem;
   padding: 2rem 0;
   border-radius: 8rem;
-  background: #88B702;
+  background: #88b702;
   border: none;
   font-weight: 700;
   cursor: pointer;
@@ -110,7 +110,6 @@ textarea {
   font-weight: 500;
 }
 
-
 @media (max-width: 480px) {
   .contact {
     padding: 10rem 1.5rem;
@@ -139,7 +138,6 @@ textarea {
   }
 }
 
-
 @media (min-width: 481px) and (max-width: 1024px) {
   .contact {
     padding: 8rem 2rem;
@@ -147,6 +145,7 @@ textarea {
 
   .contact_title {
     font-size: 4.2rem;
+    margin: 10rem 0 5rem;
   }
 
   .contact_grid {
@@ -158,7 +157,6 @@ textarea {
     width: 22rem;
   }
 }
-
 
 @media (min-width: 1441px) {
   .contact {

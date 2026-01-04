@@ -13,7 +13,7 @@
 .projectDescription {
   padding: 1.6rem 38rem;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 3.2rem;
   text-align: center;
   color: #ffffff;
@@ -152,6 +152,14 @@
     margin: 0 auto;
   }
 
+  .projectTitle {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.5rem;
+    text-align: center;
+    color: white;
+  }
+
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -283,13 +291,13 @@
   .projectTitle {
     margin-top: 2rem;
     text-align: start;
-    font-size: 3.8rem;
+    font-size: 3.7rem;
     line-height: 5rem;
   }
 
   .projectDescription {
     padding: 0;
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-align: start;
     width: 100%;
   }
@@ -358,7 +366,7 @@
 
   .projectTitle {
     text-align: start;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     line-height: 3.6rem;
   }
 
@@ -424,6 +432,16 @@
     width: 22rem;
     height: 30rem;
     top: 22rem;
-    left: 2.2rem;
+    left: 5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .bigCard .icons .icon {
+    position: absolute;
+    width: 22rem;
+    height: 30rem;
+    top: 22rem;
+    left: 2.5rem;
   }
 }
