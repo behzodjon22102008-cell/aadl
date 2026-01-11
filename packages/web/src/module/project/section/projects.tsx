@@ -6,7 +6,7 @@ import img from "../../../assets/img/laptop.png"
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination } from "swiper/modules"
+import { Pagination } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/pagination"
 

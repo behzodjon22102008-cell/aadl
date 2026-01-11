@@ -1,32 +1,19 @@
 {
-  "name": "adl",
+  "name": "@aadlTeam/root",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-router-dom": "^7.10.1",
-    "swiper": "^12.0.3"
-  },
   "devDependencies": {
-    "@eslint/js": "^9.30.1",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.6.0",
-    "eslint": "^9.30.1",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.35.1",
-    "vite": "^7.0.4"
-  }
+    "ts-node": "^10.9.2",
+    "prettier": "^3.2.5",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.5.3"
+  },
+  "scripts": {
+    "compile": "tsc -b -w",
+    "web": "cd ./packages/web && npm run dev",
+    "bootstrap": "sh ./scripts/bootstrap.sh",
+    "clean": "sh ./scripts/clean.sh",
+    "clean-hard": "sh ./scripts/clean.sh --hard",
+    "build-local": "sh scripts/build-local.sh"
+  },
+  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
 }
