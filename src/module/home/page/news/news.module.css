@@ -207,3 +207,9 @@
     margin: 0 0 0 30rem;
   }
 } */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .articles {
+    display: none;
+  }
+}

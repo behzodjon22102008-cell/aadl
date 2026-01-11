@@ -11,31 +11,31 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 24px 2.4rem;
+  padding: 2.4rem 2.4rem;
   max-width: 2560px;
 }
 
 .top_nav {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 3.2rem;
 }
 
 .logo img {
-  height: 34px;
-  width: 72px;
+  height: 3.4rem;
+  width: 7.2rem;
 }
 
 .line {
   width: 1px;
-  height: 66px;
+  height: 6.6rem;
   background-color: #ffffff1a;
 }
 
 .navigation {
   display: flex;
-  gap: 27px;
-  font-size: 14px;
+  gap: 2.7rem;
+  font-size: 1.4rem;
   font-family: "DM Sans";
   font-weight: 300;
 }
@@ -60,9 +60,9 @@
 
 .burger {
   display: none;
-  width: 45px;
-  height: 45px;
-  font-size: 28px;
+  width: 4.5rem;
+  height: 4.5rem;
+  font-size: 2.8rem;
   color: white;
   cursor: pointer;
   background-color: #88b702;
@@ -77,16 +77,16 @@
   left: 0;
   right: 0;
   background: #050605;
-  padding: 24px;
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
   z-index: 99;
 }
 
 .mobile_menu a {
   color: white;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 
@@ -96,11 +96,11 @@
 
 @media (max-width: 767px) {
   .nav {
-    padding: 16px;
+    padding: 1.6rem;
   }
 
   .top_nav {
-    padding: 10px;
+    padding: 1rem;
     width: 100%;
     justify-content: space-between;
   }
@@ -128,7 +128,7 @@
   }
 
   .top_nav {
-    padding: 10px;
+    padding: 1rem;
     width: 100%;
     justify-content: space-between;
   }
