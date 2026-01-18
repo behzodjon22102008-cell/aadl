@@ -213,3 +213,41 @@
     display: none;
   }
 }
+
+/* slider core */
+.window {
+  overflow: hidden;
+  width: 100%;
+  overscroll-behavior: contain;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 3rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ffffff66;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  background: white;
+}

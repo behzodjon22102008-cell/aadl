@@ -204,7 +204,7 @@
   .card {
     width: 100%;
     margin: 0 auto;
-    max-width: 25rem;
+    /* max-width: 25rem; */
   }
 
   .text p {
@@ -215,15 +215,54 @@
 
 @media (min-width: 425px) and (max-width: 500px) {
   .card {
-    margin: 0 48rem;
+    /* margin: 0 48rem; */
   }
 }
 
 @media (min-width: 700px) and (max-width: 768px) {
   .card {
     display: grid;
-    grid-template-columns: 2, 1fr;
-    max-width: 35rem;
-    margin: 0 0 0 94rem;
+    grid-template-columns: 3, 1fr;
+    /* max-width: 35rem; */
+    /* margin: 0 0 0 94rem; */
   }
+}
+
+/* ===== Swiper-like mobile slider ===== */
+
+.window {
+  overflow: hidden;
+  width: 100%;
+  overscroll-behavior: contain;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ffffff66;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  background: white;
 }

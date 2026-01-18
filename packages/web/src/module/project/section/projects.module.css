@@ -1,5 +1,5 @@
 .container {
-  padding: 20rem 15rem;
+  padding: 20rem 10rem;
 }
 
 .text {
@@ -317,4 +317,43 @@
     width: 34rem;
     max-width: 31rem;
   }
+}
+
+/* ===== Swiper-like slider ===== */
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.slide {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 3rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff55;
+  cursor: pointer;
+}
+
+.active {
+  background: white;
 }

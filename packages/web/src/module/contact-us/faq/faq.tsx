@@ -11,9 +11,9 @@ const faqData = [
 ];
 
 export const Faq = () => {
-     const [openItems, setOpenItems] = useState({}); 
+     const [openItems, setOpenItems] = useState<Record<number, boolean>>({}); 
 
-  const toggle = (index:any) => {
+  const toggle = (index: number) => {
     setOpenItems((prev) => ({
       ...prev,
       [index]: !prev[index], 

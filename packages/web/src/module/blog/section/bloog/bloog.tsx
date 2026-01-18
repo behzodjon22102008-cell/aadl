@@ -4,21 +4,18 @@ import img from "../../../../assets/img/laptop.png";
 import { postData } from "../../constant/constants";
 import { Link } from "react-router-dom";
 
-// Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export default function Bloog() {
   return (
     <>
-      {/* Blog title */}
       <section>
         <div className={`${styles.blog} ${styles.container}`}>
           <h1 className={styles.blogTitle}>Blog</h1>
         </div>
       </section>
 
-      {/* HeaderBlog */}
       <section className={styles.container}>
         <div className={styles.head}>
           <div className={styles.headCard}>
@@ -35,7 +32,6 @@ export default function Bloog() {
         </div>
       </section>
 
-      {/* Latest Posts */}
       <section>
         <div className={`${styles.posts} ${styles.container}`}>
           <div className={styles.postHead}>
@@ -48,7 +44,6 @@ export default function Bloog() {
             </div>
           </div>
 
-          {/* 🔹 MOBILE + TABLET → CAROUSEL */}
           <div className={styles.mobileCarousel}>
             <Swiper
               spaceBetween={26}
@@ -98,7 +93,6 @@ export default function Bloog() {
             </Swiper>
           </div>
 
-          {/* 🔹 DESKTOP → FLEX */}
           <div className={styles.desktopGrid}>
             <div className={styles.postCards}>
               {postData.map((info, index) => (

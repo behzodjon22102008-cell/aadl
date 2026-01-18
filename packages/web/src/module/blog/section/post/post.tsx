@@ -30,7 +30,7 @@ export const Post = () => {
                 <Pagination 
                 currentPage={page}
         totalPages={3}
-        onPageChange={(p) => setPage(p)}
+        onPageChange={(p:any) => setPage(p)}
                 />
             </div>
         </div>
