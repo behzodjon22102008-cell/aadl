@@ -2,9 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 6rem;
-  padding: 12rem 0;
-  background-color: black;
+  /* gap: 60rem; */
+  padding: 12rem 3rem;
+  position: relative;
+  background: transparent;
+  overflow: visible;
+}
+
+.advantages_section::before {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 129rem;
+  height: 48.9rem;
+  background: linear-gradient(97.05deg, #688e00 0%, rgba(5, 67, 11, 0.1) 98%);
+  filter: blur(15rem);
+  pointer-events: none;
 }
 
 .phones_block {
@@ -17,7 +32,6 @@
   position: absolute;
   width: 75rem;
   height: 75rem;
-  background: radial-gradient(circle, #597b03 0%, #0f0f0f 60%);
   border-radius: 50%;
   filter: blur(4rem);
   top: -10rem;
@@ -36,6 +50,8 @@
 .text_block {
   max-width: 46rem;
   margin-right: 20rem;
+  position: relative;
+  z-index: 1;
 }
 
 .text_block h2 {
@@ -106,7 +122,12 @@
 }
 
 @media (min-width: 991px) and (max-width: 1299px) {
-  .green_glow {
+  .advantages_section {
+    background: black;
+  }
+
+  .advantages_section::before {
+    display: none;
     background: none;
   }
 }
@@ -123,6 +144,12 @@
     align-items: center;
     padding: 8rem 3rem;
     gap: 5rem;
+    background: black;
+  }
+
+  .advantages_section::before {
+    display: none;
+    background: none;
   }
 
   .phones_block {
@@ -172,6 +199,12 @@
     gap: 4rem;
     padding: 6rem 1.6rem;
     position: relative;
+    background: black;
+  }
+
+  .advantages_section::before {
+    display: none;
+    background: none;
   }
 
   .phones_block {
