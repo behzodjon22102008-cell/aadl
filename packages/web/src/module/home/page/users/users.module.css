@@ -95,7 +95,7 @@
   .testimonials h2 {
     font-size: 3.6rem;
     /* margin-left: 12rem; */
-    margin: 3rem 2rem;
+    margin: 3rem 4rem;
   }
 }
 
@@ -299,3 +299,19 @@
 .active {
   background: white;
 }
+
+.window {
+  overflow: hidden;
+  width: 100%;
+  overscroll-behavior: contain;
+  /* Новые стили для курсора и запрета выделения */
+  cursor: grab;
+  user-select: none; /* Чтобы текст не синел при тяге */
+  touch-action: pan-y; /* Разрешаем вертикальный скролл страницы, но ловим горизонтальный */
+}
+
+.window:active {
+  cursor: grabbing; /* Курсор "сжатая рука" при нажатии */
+}
+
+/* Остальные стили .track, .slide и т.д. остаются без изменений */

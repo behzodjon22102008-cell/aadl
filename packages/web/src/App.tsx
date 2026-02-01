@@ -12,20 +12,20 @@ import { ContactUs } from "./module/contact-us/contact-us"
 function App() {
   return (
     <div className={styles.root}>
-    <Router>
-      <Header/>
+      <Router>
+        <Header />
 
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="/about" element={<About/>}></Route>
-        <Route path="/pricing" element={<Pricing/>}></Route>
-        <Route path="/projects" element={<Project />}></Route>
-        <Route path="/blog" element={<Blog/>}></Route>
-        <Route path="/contact" element={<ContactUs />}></Route>
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/pricing" element={<Pricing />}></Route>
+          <Route path="/projects" element={<Project />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/contact" element={<ContactUs />}></Route>
+        </Routes>
 
-      <Footer/>
-    </Router>
+        <Footer />
+      </Router>
     </div>
   )
 }

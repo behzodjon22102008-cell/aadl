@@ -357,3 +357,38 @@
 .active {
   background: white;
 }
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 4rem;
+  /* Важно для работы руками: */
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y; /* Разрешает вертикальный скролл страницы */
+}
+
+.slider:active {
+  cursor: grabbing;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1); /* Сделаем чуть плавнее */
+}
+
+.slide {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  /* Предотвращаем баг, когда картинки мешают свайпу */
+  pointer-events: auto;
+}
+
+/* Убедись, что карточки не слишком широкие на мобилках */
+@media (max-width: 767px) {
+  .postCard {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

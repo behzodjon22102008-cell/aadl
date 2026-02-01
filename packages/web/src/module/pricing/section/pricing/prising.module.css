@@ -266,3 +266,24 @@
 .active {
   background: white;
 }
+
+.window {
+  overflow: hidden;
+  width: 100%;
+  overscroll-behavior: contain;
+  /* Для перетаскивания */
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.window:active {
+  cursor: grabbing;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.4s ease-out; /* Чуть плавнее выезд */
+}
+
+/* Остальные стили .mobile, .desktop и @media оставь как в твоем исходном коде */

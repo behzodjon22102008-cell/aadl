@@ -68,7 +68,7 @@
   .mobileSlider {
     display: block;
     /* padding: 0 2rem 4rem; */
-    margin: 0 auto;
+    margin: 0 1rem;
     align-items: center;
     justify-content: center;
   }
@@ -250,4 +250,20 @@
 
 .active {
   background: white;
+}
+
+/* slider core */
+.window {
+  overflow: hidden;
+  width: 100%;
+  overscroll-behavior: contain;
+
+  /* Добавлено для корректной работы свайпа */
+  cursor: grab;
+  touch-action: pan-y; /* Разрешаем вертикальный скролл страницы */
+  user-select: none; /* Чтобы текст не выделялся при свайпе */
+}
+
+.window:active {
+  cursor: grabbing;
 }

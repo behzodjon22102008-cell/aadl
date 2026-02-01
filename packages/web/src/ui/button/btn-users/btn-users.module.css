@@ -30,3 +30,9 @@
     margin: 3rem auto;
   }
 }
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .btn_users {
+    margin: 3rem 4rem;
+  }
+}

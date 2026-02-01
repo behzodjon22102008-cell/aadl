@@ -145,6 +145,7 @@
     height: 55.4rem;
     padding: 4rem 1.6rem;
     text-align: center;
+    overflow: hidden;
   }
 
   .text {
@@ -185,7 +186,7 @@
 
 @media (min-width: 991px) and (max-width: 1024px) {
   .phones img {
-    margin: 24rem 0;
+    margin: 25.8rem 0;
   }
 }
 
@@ -197,7 +198,7 @@
 
 @media (min-width: 1200px) and (max-width: 1500px) {
   .phones img {
-    margin: 6.3rem 0;
+    margin: 7.1rem 0;
   }
 }
 
